@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header id="header">
+    <div class="logo">
+        <img src="RECURSOS/logo.png" alt="Logo Restaurante">
+    </div>
+
+    <nav class="menu">
+        <a href="#carta">Carta</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#opiniones">Opiniones</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bienvenido al Corrido parrilla</h1>
+    <p>Tu mejor opcion si estas en Fontibon</p>
+    <a href="#carta" class="btn">Ver Carta</a>
+</section>
+
+<section id="carta" class="carta">
+
+    <h2>¿UN ANTOJO?</h2>
+
+    <div class="categorias">
+        <button onclick="mostrarCategoria('entradas')">ENTRADAS</button>
+        <button onclick="mostrarCategoria('adicionales')">ADICIONALES</button>
+        <button onclick="mostrarCategoria('salchipapas')">SALCHIPAPAS</button>
+        <button onclick="mostrarCategoria('platonos')">PLATOS</button>
+        <button onclick="mostrarCategoria('platos_a_la_carta')">PLATOS A LA CARTA</button>
+        <button onclick="mostrarCategoria('arroces')">ARROCES</button>
+        <button onclick="mostrarCategoria('menu_infantil')">MENU INFANTIL</button>
+        <button onclick="mostrarCategoria('carnes_especiales')">CARNES ESPECIALES</button>
+        <button onclick="mostrarCategoria('pastas')">PASTAS</button>
+        <button onclick="mostrarCategoria('bowl')">BOWL</button>
+        <button onclick="mostrarCategoria('mazorcadas')">MAZORCADAS</button>
+        <button onclick="mostrarCategoria('hamburguesas')">HAMBURGUESAS DE CARNE</button>
+        <button onclick="mostrarCategoria('hamburguesas-pollo')">HAMBURGUESAS DE POLLO</button>
+        <button onclick="mostrarCategoria('perros')">PERROS</button>
+        <button onclick="mostrarCategoria('bebidas')">BEBIDAS</button>
+        
+    </div>
+
+    <div class="menu-items">
+
+        <!-- 🍽️Entradas -->
+        <div id="entradas" class="categoria">
+            <h3>ENTRADAS</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Porcion ensalada</td><td>$4.500</td></tr>
+                    <tr><td>Porcion arroz</td><td>$4.000</td></tr>
+                    <tr><td>Porcion francesa</td><td>$7.500</td></tr>
+                    <tr><td>Porcion criollas</td><td>$5.800</td></tr>
+                    <tr><td>Croquetas de yuca</td><td>$6.000</td></tr>
+                    <tr><td>Papas casco</td><td>$7.800</td></tr>
+                    <tr><td>Pinchos de pollo</td><td>$8.000</td></tr>
+                    <tr><td>Pinchos con papas</td><td>$12.500</td></tr>
+                    <tr><td>Porcion huevos codorniz</td><td>$5.800</td></tr>
+                    <tr><td>Nuggets</td><td>$9.000</td></tr>
+                    <tr><td>Nuggets con papas</td><td>$9.000</td></tr>
+                    <tr><td>Anillos de cebollas</td><td>$9.500</td></tr>
+                    <tr><td>Porcion de tocinetas</td><td>$9.000</td></tr>
+                    <tr><td>Papa francesa, queso gratinado y huevos codorniz</td><td>$10.000</td></tr>
+                    <tr><td>Chorizada de cerdo</td><td>$10.000</td></tr>
+                    <tr><td>Empanada tipo coctel</td><td>$9.000</td></tr>
+                    <tr><td>Dedos de mozarella</td><td>$9.000</td></tr>
+                    <tr><td>Patacon con hogao</td><td>$12.000</td></tr>
+                    <tr><td>Patacon desmechado</td><td>$20.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--  🧂Adicionales -->
+        <div id="adicionales" class="categoria">
+            <h3>Adicionales</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tocineta</td><td>$3.500</td></tr>
+                    <tr><td>Porcion Maiz</td><td>$5.000</td></tr>
+                    <tr><td>Porcion Hogao</td><td>$4.000</td></tr>
+                    <tr><td>Porcion Champinones</td><td>$7.500</td></tr>
+                    <tr><td>Porcion Champipollo</td><td>$8.000</td></tr>
+                    <tr><td>Porcion Ranchero</td><td>$9.000</td></tr>
+                    <tr><td>Porcion Carne Desmechada</td><td>$9.000</td></tr>
+                    <tr><td>PPorcion Pollo Desmechada</td><td>$8.000</td></tr>
+                    <tr><td>Porcion Platano Dulce</td><td>$5.000</td></tr>
+                    <tr><td>Colombina</td><td>$7.000</td></tr>
+                    <tr><td>Porcion Queso</td><td>$7.000</td></tr>
+                    <tr><td>Porcion de Costillas (2 Unidades)</td><td>$7.500</td></tr>
+                    <tr><td>Platano tajado ( 5 tajadas)</td><td>$5.000</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!--  🍟Salchipapas -->
+        <div id="salchipapas" class="categoria">
+            <h3>Salchipapas</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tradicional</td><td>$13.000</td></tr>
+                    <tr><td>Corrido</td><td>$19.000</td></tr>
+                    <tr><td>Especial</td><td>$24.000</td></tr>
+                    <tr><td>Mixta </td><td>$26.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--  🍌Platanos -->
+        <div id="platonos" class="categoria">
+            <h3>Platos</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Combo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tradicional</td><td>$21.500</td><td>$26.000</td></tr>
+                    <tr><td>Corrido</td><td>$24.000</td><td>$28.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--  🍽️Platos -->
+        <div id="platos_a_la_carta" class="categoria">
+            <h3>Platos a la Carta</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Carne Asada</td><td>$24.000</td></tr>
+                    <tr><td>Pechuga Parrilla</td><td>$23.000</td></tr>
+                    <tr><td>Carne de Cerdo</td><td>$24.000</td></tr>
+                    <tr><td>Carne Encebollada</td><td>$25.000</td></tr>
+                    <tr><td>Pechuga Gratinada</td><td>$24.000</td></tr>
+                    <tr><td>⭐Combipapa Corrido</td><td>$24.000</td></tr>
+                    <tr><td>Carne Bistec</td><td>$25.000</td></tr>
+                    <tr><td>Pechuga Hawaiana</td><td>$25.500</td></tr>
+                    <tr><td>Pechuga Campesina </td><td>$25.000</td></tr>
+                    <tr><td>Pechuga con Ciruelas</td><td>$23.000</td></tr>
+                    <tr><td>Pechuga con Champinones</td><td>$26.000</td></tr>
+                    <tr><td>Pechuga Ranchera</td><td>$26.000</td></tr>
+                    <tr><td>Pechuga Mixta</td><td>$28.000</td></tr>   
+                    <tr><td>Pechuga Quindense</td><td>$25.000</td></tr>
+                    <tr><td>Carne Campesina</td><td>$26.000</td></tr>
+                    <tr><td>Carne Gratinada</td><td>$25.000</td></tr>
+                    <tr><td>Plato Mixto</td><td>$38.000</td></tr>
+                    <tr><td>Pechuga con Camarones</td><td>$26.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🍚 ARROCES -->
+        <div id="arroces" class="categoria">
+            <h3>Arroces</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>⭐El Corrido</td><td>$28.500</td></tr>
+                    <tr><td>Chino con Camarones</td><td>$28.000</td></tr>
+                    <tr><td>Salteado</td><td>$26.000</td></tr>
+                    <tr><td>Agridulce</td><td>$26.500</td></tr> 
+                    <tr><td>Chaufa</td><td>$30.000</td></tr> 
+                    <tr><td>Camaron y Calamar</td><td>$30.000</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🥓Menu infantil -->
+        <div id="menu_infantil" class="categoria">
+            <h3>Menu Infantil</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio(Papas y Gaseosa)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Nuggets</td><td>$23.000</td></tr>
+                    <tr><td>Hamburguesa</td><td>$23.000</td></tr>
+                    <tr><td>Perro</td><td>$23.000</td></tr>
+                    <tr><td>Pinchos</td><td>$23.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🍖CARNES ESPECIALES -->
+        <div id="carnes_especiales" class="categoria">
+            <h3>Carnes Especiales</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Lomo de Cerdo</td><td>$35.000</td></tr>
+                    <tr><td>Chatas de Cerdo</td><td>$36.000</td></tr>
+                    <tr><td>⭐Chuleta con tocino</td><td>$38.000</td></tr>
+                    <tr><td>Churrasco 400 gramos</td><td>$37.500</td></tr> 
+                    <tr><td>Punta de Anca 400 gramos</td><td>$37.000</td></tr>
+                    <tr><td>Baby beeff Gratinado</td><td>$37.500</td></tr>
+                    <tr><td>Parrilla del Corrido</td><td>$59.000</td></tr>
+                    <tr><td>Doble Parrillada</td><td>$86.000</td></tr>
+                    <tr><td>Costillas BBQ Libra</td><td>$37.000</td></tr>
+                    <tr><td>Baby Beeff Salteado Con camarones</td><td>$41.000</td></tr>
+                    <tr><td>T-bone 350 gramos</td><td>$40.000</td></tr>
+                    <tr><td>Rib-eye</td><td>$40.000</td></tr>
+                    <tr><td>Mini churrasquito</td><td>$28.000</td></tr>
+                    <tr><td>Mojarra en salsa o Frita</td><td>$32.000</td></tr>
+                    <tr><td>Bagre en Salsa</td><td>$28.000</td></tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🍝 PASTAS -->
+        <div id="pastas" class="categoria">
+            <h3>Pastas</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Boloña</td><td>$23.000</td>></tr>
+                    <tr><td>⭐Carbonara</td><td>$24.000</td></tr>
+                    <tr><td>Fileto Pollo</td><td>$22.000</td></tr>
+                    <tr><td>Fileto Carne</td><td>$23.000</td></tr>
+                    <tr><td>Fileto Mixto</td><td>$27.000</td></tr>
+                    <tr><td>Pasta Cremosa</td><td>$28.000</td></tr>
+                    <tr><td>Pasta con Camarones</td><td>$27.000</td></tr>
+                    <tr><td>Chowmein</td><td>$29.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🥣BOWL -->
+        <div id="bowl" class="categoria">
+            <h3>Bowl</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>⭐Paisa</td><td>$22.000</td></tr>
+                    <tr><td>Sobre Barriga</td><td>$22.000</td></tr>
+                    <tr><td>Tilapia</td><td>$22.000</td></tr>
+                    <tr><td>Cerdo Agridulce</td><td>$22.000</td></tr>
+                    <tr><td>Ensalada cesar</td><td>$22.000</td></tr>
+                    <tr><td>Mini Arroz Paisa</td><td>$22.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🍚 MAZORCADAS -->
+        <div id="mazorcadas" class="categoria">
+            <h3>Mazorcadas</h3>
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tradicional </td><td>$16.000</td></tr>
+                    <tr><td>Corrida</td><td>$20.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🍔 HAMBURGUESAS -->
+        <div id="hamburguesas" class="categoria activa">
+            <h3>Hamburguesas</h3>
+
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Combo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Hamburguesa Clásica</td><td>$12.900</td><td>$22.000</td></tr>
+            <tr><td>Hamburguesa Criolla</td><td>$15.500</td><td>$24.000</td></tr>
+            <tr><td>Hamburguesa Tejana</td><td>$15.500</td><td>$24.000</td></tr>
+            <tr><td>Hamburguesa Con Champinon</td><td>$16.500</td><td>$25.000</td></tr>
+            <tr><td>Hamburguesa Champipollo</td><td>$17.000</td><td>$26.000</td></tr>
+            <tr><td>Hamburguesa Hawaiana</td><td>$16.000</td><td>$24.000</td></tr>
+            <tr><td>Hamburguesa Bistec</td> <td>$16.000</td><td>$25.000</td></tr>
+            <tr><td>Hamburguesa Corrida</td><td>$17.000</td><td>$26.500</td></tr>
+            <tr><td>Hamburguesa Pepinillos</td><td>$14.000</td><td>$23.000</td></tr>
+            <tr><td>Hamburguesa Platano Dulce</td><td>$15.500</td><td>$24.000</td></tr>
+            <tr><td>⭐Hamburguesa Ranchera</td><td>$17.500</td><td>$26.000</td></tr>
+            <tr><td>Hamburguesa Desmechada</td><td>$19.000</td><td>$27.000</td></tr>
+            <tr><td>Hamburguesa Mixta</td><td>$23.000</td><td>$29.000</td></tr>
+            <tr><td>Hamburguesa Mixta Corrida</td><td>$26.000</td><td>$30.000</td></tr>
+            <tr><td>Hamburguesa Doble Carne</td><td>$22.000</td><td>$29.000</td></tr>
+            <tr><td>Hamburguesa Doble Corrida</td><td>$26.000</td><td>$30.000</td></tr>
+            <tr><td>Hamburguesa Triple Carne</td><td>$29.000</td><td>$36.000</td></tr>
+            <tr><td>Hamburguesa Triple Corrida</td><td>$33.000</td><td>$37.000</td></tr>
+            <tr><td>Hamburguesa Triple Mixta Corrida</td><td>$35.000</td><td>$38.000</td></tr>
+            <tr><td>Hamburguesa Nacho Corrida</td><td>$17.000</td><td>$25.000</td></tr>
+            <tr><td>Hamburguesa Artesanal</td><td>$17.000</td><td>$24.000</td></tr>
+            <tr><td>Hamburguesa Artesanal Corrida</td><td>$22.000</td><td>$28.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🍗 HAMBURGUESAS DE POLLO -->
+        <div id="hamburguesas-pollo" class="categoria">
+            <h3>Hamburguesas de Pollo</h3>
+
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Combo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pollo Clásica</td><td>$15.000</td><td>$23.000</td></tr>
+                    <tr><td>Corrida Pollo</td><td>$18.000</td><td>$26.000</td></tr>
+                    <tr><td>Doble Pollo</td><td>$24.000</td><td>$28.000</td></tr>
+                    <tr><td>Triple Pollo</td><td>$30.000</td><td>$36.000</td></tr>
+                    <tr><td>Triple Corrida</td><td>$34.000</td><td>$38.000</td></tr>
+                    <tr><td>⭐Con Carne Desmechada</td><td>$22.000</td><td>$27.000</td></tr>
+                    <tr><td>Con Champinones</td><td>$17.000</td><td>$26.000</td></tr>
+                    <tr><td>Ranchera</td><td>$19.000</td><td>$26.000</td></tr>
+                    <tr><td>Criolla</td><td>$17.000</td><td>$25.000</td></tr>
+                    <tr><td>Tejana</td><td>$16.000</td><td>$24.000</td></tr>
+                    <tr><td>Nacho Corrida</td><td>$18.000</td><td>$25.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 🌭 PERROS -->
+        <div id="perros" class="categoria">
+            <h3>Perros</h3>
+
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Combo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Perro Tradicional</td><td>$9.500</td><td>$18.000</td></tr>
+                    <tr><td>Americano</td><td>$13.000</td><td>$21.000</td></tr>
+                    <tr><td>Choriperro</td><td>$14.000</td><td>$21.000</td></tr>
+                    <tr><td>Con Champiñones</td><td>$14.000</td><td>$22.000</td></tr>
+                    <tr><td>Con champipollo</td><td>$15.000</td><td>$22.000</td></tr>
+                    <tr><td>Corrido</td><td>$16.500</td><td>$23.000</td></tr>
+                    <tr><td>Hawaiano</td><td>$15.000</td><td>$23.000</td></tr>
+                    <tr><td>⭐Desmechada</td><td>$16.000</td><td>$24.000</td></tr>
+                    <tr><td>Ranchero</td><td>$17.000</td><td>$24.000</td></tr>
+                    <tr><td>Nacho Corrido</td><td>$15.000</td><td>$22.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+ <!-- 🥤 BEBIDAS -->
+        <div id="bebidas" class="categoria">
+            <h3>Bebidas</h3>
+
+            <table class="tabla-menu">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Corona</td><td>$7.000</td></tr>
+                    <tr><td>Club Colombia </td><td>$5.800</td></tr>
+                    <tr><td>Corona Michelada</td><td>$8.000</td></tr>
+                    <tr><td>Cola y Pola lata</td><td>$4.500</td></tr>
+                    <tr><td>Heineken lata</td><td>$5.800</td></tr>
+                    <tr><td>Budwaiser lata</td><td>$5.800</td></tr>
+                    <tr><td>⭐Limonada Natural</td><td>$6.500</td></tr>
+                    <tr><td>Limonada Hierba Buena</td><td>$7.500</td></tr>
+                    <tr><td>Limonada Cereza</td><td>$7.600</td></tr>
+                    <tr><td>Limonada de coco agua</td><td>$7.200</td></tr>
+                    <tr><td>Limonada Coco leche</td><td>$8.000</td></tr>
+                    <tr><td>Cocacola lata</td><td>$4.500</td></tr>
+                    <tr><td>Gaseosas Postobon 400 ml</td><td>$3.500</td></tr>
+                    <tr><td>Gaseosas Postobon 250 ml</td><td>$2.500</td></tr>
+                    <tr><td>Coca Cola 400 ml</td><td>$3.800</td></tr>
+                    <tr><td>Gaseosa Cocacola 250 ml</td><td>$2.800</td></tr>
+                    <tr><td>Productos Coca-Cola 400ml</td><td>$3.800</td></tr>
+                    <tr><td>Coca-Cola 1.5</td><td>$7.500</td></tr>
+                    <tr><td>Coca Cola 3 Litros</td><td>$11.000</td></tr>
+                    <tr><td>Jugos Naturales</td><td>$7.500</td></tr>
+                    <tr><td>Jugos Naturales leche</td><td>$8.500</td></tr>
+                    <tr><td>Jugos Hit</td><td>$4.000</td></tr>
+                    <tr><td>Jugos Del Valle</td><td>$3.800</td></tr>
+                    <tr><td>Agua Manantial Natural</td><td>$4.000</td></tr>
+                    <tr><td>Agua Manantial Gas</td><td>$4.300</td></tr>
+                    <tr><td>Granizados Agua</td><td>$11.000</td></tr>
+                    <tr><td>Granizados Leche</td><td>$12.000</td></tr>
+                    <tr><td>Soda de maracuya</td><td>$10.500</td></tr>
+                    <tr><td>Soda de Frutos Rojos</td><td>$10.500</td></tr>
+                    <tr><td>Limonada de Coco y fresa</td><td>$10.000</td></tr>
+
+                </tbody>
+            </table>
+            
+        </div>        
+
+    </div>
+
+</section>
+
+<section id="nosotros" class="nosotros">
+    <h2>Sobre Nosotros</h2>
+
+    <div class="info" >
+            <p style="text-align: center;">Somos un restaurante enfocado en calidad y experiencia.</p>
+            <p style="text-align: center;">⭐ Calificación 4.6 en clientes</p>
+        </div>
+
+    <div class="contenido-nosotros">
+        <div class="galeria">
+            <img src="assets/HORARIOS.png">
+            <img src="assets/GUSTICO.png">
+            <img src="assets/ALITAS.png">
+            <img src="assets/COMBOC.png">
+            <img src="assets/LOGO.png">
+        </div>
+
+    </div>
+</section>
+<section id="opiniones" class="carta"></section>
+<section class="opiniones">
+
+    <h2>Lo que dicen nuestros clientes</h2>
+
+    <div class="contenedor-opiniones">
+
+        <div class="opinion-card">
+            <img src="assets/PERSONAS/P1.png" class="foto">
+            <h4>David Santiago Velasquez Fitata</h4>
+            <p>"Exelente comida bueno bonito y barato atención 10 de 10 en todo 🔥"</p>
+            <div class="estrellas">★★★★★</div>
+        </div>
+
+        <div class="opinion-card">
+            <img src="assets/PERSONAS/P2.png" class="foto">
+            <h4>Rose Curves</h4>
+            <p>"Es delicioso pero aveces no hay lo que uno pide, la dueña del restaurante es increíblemente amable, muy recomendado el lugar"</p>
+            <div class="estrellas">★★★★☆</div>
+        </div>
+
+        <div class="opinion-card">
+            <img src="assets/PERSONAS/P3.png" class="foto">
+            <h4>Felipe Medina</h4>
+            <p>"Gran lugar, te atienden como si fueras cliente de toda la vida, comida muy Rica y están en constante crecimiento en el local."</p>
+            <div class="estrellas">★★★★★</div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 El Corrido parrilla</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
