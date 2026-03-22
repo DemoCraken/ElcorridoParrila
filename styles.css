@@ -448,7 +448,7 @@ footer {
     pointer-events: none;
 }
 
-/* LOGO_PIXELADO */
+/* LOGO_PIXELADO pc */
 .logo-img {
     width: 150px; /*  ajusta tamaño */
     margin-bottom: 20px;
@@ -458,6 +458,7 @@ footer {
     margin-right: auto;
 }
 
+/* LOGO_PIXELADO CELULAR */
 .logo-img {
     width: 150px;
     margin-bottom: -60px;
