@@ -450,8 +450,8 @@ footer {
 
 /* LOGO_PIXELADO */
 .logo-img {
-    width: 500px; /* 🔥 ajusta tamaño */
-    margin-bottom: 50px;
+    width: 150px; /*  ajusta tamaño */
+    margin-bottom: 20px;
     
     display: block;
     margin-left: auto;
