@@ -391,3 +391,89 @@ footer {
     color: black;
     transform: scale(1.2);
 }
+
+
+
+/* LETRA */
+
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url("assets/fondo-oeste.jpg"); /* 🔥 imagen tipo desierto o madera */
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-family: 'Rye', cursive;
+    font-size: 3rem;
+    color: #f5c542;
+    text-shadow: 
+        2px 2px 0px #000,
+        4px 4px 10px rgba(0,0,0,0.8);
+    letter-spacing: 2px;
+}
+.hero p {
+    color: #ddd;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+.hero button {
+    background: linear-gradient(145deg, #f5c542, #c89b1d);
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(245,197,66,0.7);
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("assets/humo.png");
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* LOGO_PIXELADO */
+.logo-img {
+    width: 500px; /* 🔥 ajusta tamaño */
+    margin-bottom: 50px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-img {
+    width: 300px;
+    margin-bottom: -60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    filter: drop-shadow(0 0 10px rgba(245,197,66,0.6));
+}
+
+.logo-img {
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
