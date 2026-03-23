@@ -450,7 +450,7 @@ footer {
 
 /* LOGO_PIXELADO pc */
 .logo-img {
-    width: 200px; /*  ajusta tamaño */
+    width: 300px; /*  ajusta tamaño */
     margin-bottom: 20px;
     
     display: block;
@@ -460,7 +460,7 @@ footer {
 
 /* LOGO_PIXELADO CELULAR */
 .logo-img {
-    width: 200px;
+    width: 250px;
     margin-bottom: -60px;
     display: block;
     margin-left: auto;
