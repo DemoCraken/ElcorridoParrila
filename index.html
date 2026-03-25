@@ -133,10 +133,30 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Tradicional</td><td>$13.000</td></tr>
-                    <tr><td>Corrido</td><td>$19.000</td></tr>
-                    <tr><td>Especial</td><td>$24.000</td></tr>
-                    <tr><td>Mixta </td><td>$26.000</td></tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Tradicional</td><td>$13.000</td></tr>
+                    <tr class="info oculto">
+    <td colspan="3">
+                Salchipapa americana fazenda dorada + papas a la francesa, queso fundido. Salsas a su elección.
+    </td>
+</tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Corrido</td><td>$19.000</td></tr>
+                    <tr class="info oculto">
+    <td colspan="3">
+                Salchipapa americana Faenza + papas a la francesa, queso gratinado, huevos de codorniz y una tocineta.
+    </td>
+</tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Especial</td><td>$24.000</td></tr>
+                    <tr class="info oculto">
+    <td colspan="3">
+                Salchipapa americana Faenza + papas a la francesa, doble queso gratinado, huevos de codorniz y una tocineta + el guiso de su elección: (champiñón y pollo desmechado, carne de res desmechada, guiso ranchero o pollo desmechado).
+    </td>
+</tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Mixta </td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+    <td colspan="3">
+                Con dos guisos a su elección.
+    </td>
+</tr>
                 </tbody>
             </table>
         </div>
@@ -153,9 +173,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Tradicional</td><td>$21.500</td><td>$26.000</td></tr>
-                    <tr><td>Corrido</td><td>$24.000</td><td>$28.000</td></tr>
-                    <p>Los combos incluyen papas y bebida</p>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Tradicional</td><td>$21.500</td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Plátano pimón cubierto con ensalada de lechuga, zanahoria + el guiso de su elección: (champiñón y pollo desmechado, carne de res desmechada, guiso ranchero o pollo desmechado) + salsas, queso fundido y dos huevos de codorniz.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Corrido</td><td>$24.000</td><td>$28.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Plátano pimón, cubierto con ensalada de lechuga, zanahoria + dos guisos a su elección (carne de res desmechada, pollo desmechado, guiso ranchero, champiñón y pollo) + salsas, queso fundido y dos huevos de codorniz.
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -171,24 +200,113 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Carne Asada</td><td>$24.000</td></tr>
-                    <tr><td>Pechuga Parrilla</td><td>$23.000</td></tr>
-                    <tr><td>Carne de Cerdo</td><td>$24.000</td></tr>
-                    <tr><td>Carne Encebollada</td><td>$25.000</td></tr>
-                    <tr><td>Pechuga Gratinada</td><td>$24.000</td></tr>
-                    <tr><td>⭐Combipapa Corrido</td><td>$24.000</td></tr>
-                    <tr><td>Carne Bistec</td><td>$25.000</td></tr>
-                    <tr><td>Pechuga Hawaiana</td><td>$25.500</td></tr>
-                    <tr><td>Pechuga Campesina </td><td>$25.000</td></tr>
-                    <tr><td>Pechuga con Ciruelas</td><td>$23.000</td></tr>
-                    <tr><td>Pechuga con Champinones</td><td>$26.000</td></tr>
-                    <tr><td>Pechuga Ranchera</td><td>$26.000</td></tr>
-                    <tr><td>Pechuga Mixta</td><td>$28.000</td></tr>   
-                    <tr><td>Pechuga Quindense</td><td>$25.000</td></tr>
-                    <tr><td>Carne Campesina</td><td>$26.000</td></tr>
-                    <tr><td>Carne Gratinada</td><td>$25.000</td></tr>
-                    <tr><td>Plato Mixto</td><td>$38.000</td></tr>
-                    <tr><td>Pechuga con Camarones</td><td>$26.000</td></tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Carne Asada</td><td>$24.000</td></tr><tr class="info oculto">
+                        <td colspan="3">
+                           Corte de carne de res asada de 220 gramos + papa a la francesa + yuca + ensalada
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Parrilla</td><td>$23.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                           Filete de pechuga a la parrilla
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Carne de Cerdo</td><td>$24.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Corte de carne de cerdo de 220 gramos + papas a la francesa + yuca + ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Carne Encebollada</td><td>$25.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Corte de carne de res asada de 220 gramos + papa a la francesa + yuca + ensalada + cebolla grille.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Gratinada</td><td>$24.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso gratinado + papas a la francesa + yuca + ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>⭐Combipapa Corrido</td><td>$24.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                           Plato de papas a la francesa + trozos de carne de res, cerdo y pollo + chorizo picado y salchicha americana, todo cubierto con queso fundido.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Carne Bistec</td><td>$25.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Corte de carne de res cubierta en hogao y huevo frito + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Hawaiana</td><td>$25.500</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso fundido + trozos de piña + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Campesina </td><td>$25.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso fundido + granos de maíz tierno + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga con Ciruelas</td><td>$23.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso fundido + salsa de ciruelas + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga con Champinones</td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso fundido + champiñones en salsa de la casa + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Ranchera</td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso fundido + trozos de chorizo fazenda elaborado con salsa picante + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Mixta</td><td>$28.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla + queso fundido cubierto por 2 guisos a su elección + papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga Quindense</td><td>$25.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Filete de pechuga a la parrilla, gratinado con salsas en base a miel y plátano maduro, con sabor a canela, acompañado de papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Carne Campesina</td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Carne de res a la parrilla, gratinada con maíz tierno acompañado de papas a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Carne Gratinada</td><td>$25.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Corte de carne de res asada, cubierta con queso doble crema gratinado + papa a la francesa + yuca + ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Plato Mixto</td><td>$38.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Corte de carne de res o cerdo, y pechuga a la parrilla + papas a la francesa + yuca + ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Pechuga con Camarones</td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            ---------
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -204,12 +322,42 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>⭐El Corrido</td><td>$28.500</td></tr>
-                    <tr><td>Chino con Camarones</td><td>$28.000</td></tr>
-                    <tr><td>Salteado</td><td>$26.000</td></tr>
-                    <tr><td>Agridulce</td><td>$26.500</td></tr> 
-                    <tr><td>Chaufa</td><td>$30.000</td></tr> 
-                    <tr><td>Camaron y Calamar</td><td>$30.000</td></tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>⭐El Corrido</td><td>$28.500</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz salteado de verduras, raíces chinas, con trozos de res, cerdo y chorizo, acompañado de costilla ahumada + papas a la francesa y ensalada
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Chino con Camarones</td><td>$28.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz salteado con trozos de pollo y camarones. Le acompañan una colombina, papas a la francesa y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Salteado</td><td>$26.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz salteado con pollo y vegetales, le acompañan un colombina, ensalada y papas a la francesa.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Agridulce</td><td>$26.500</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz con vegetales salteados, acompañado con trozos de pollo apanado, baño en salsa agridulce, papas a la francesa y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Chaufa</td><td>$30.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz salteado de verduras, raíces chinas acompañado de trozos de carnes de res, cerdo, pollo, tortilla y camarones, con un toque picante.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Camaron y Calamar</td><td>$30.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz preparado con sazón especial de la casa acompañado de una buena porción de camarones y calamar con un trozo de limón y ensalada.
+                        </td>
+                    </tr>
 
                 </tbody>
             </table>
@@ -245,22 +393,96 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Lomo de Cerdo</td><td>$35.000</td></tr>
-                    <tr><td>Chatas de Cerdo</td><td>$36.000</td></tr>
-                    <tr><td>⭐Chuleta con tocino</td><td>$39.000</td></tr>
-                    <tr><td>Churrasco 400 gramos</td><td>$39.000</td></tr> 
-                    <tr><td>Punta de Anca 400 gramos</td><td>$39.000</td></tr>
-                    <tr><td>Baby beeff Gratinado</td><td>$40.000</td></tr>
-                    <tr><td>Parrilla del Corrido</td><td>$59.000</td></tr>
-                    <tr><td>Doble Parrillada</td><td>$86.000</td></tr>
-                    <tr><td>Costillas BBQ Libra</td><td>$37.000</td></tr>
-                    <tr><td>Baby Beeff Salteado Con camarones</td><td>$44.000</td></tr>
-                    <tr><td>T-bone 350 gramos</td><td>$40.000</td></tr>
-                    <tr><td>Rib-eye</td><td>$40.000</td></tr>
-                    <tr><td>Mini churrasquito</td><td>$28.000</td></tr>
-                    <tr><td>Mojarra en salsa o Frita</td><td>$32.000</td></tr>
-                    <tr><td>Bagre en Salsa</td><td>$28.000</td></tr>
-
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Lomo de Cerdo</td><td>$35.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            -Corte de lomo de cerdo 330gr + queso fundido cubierto con trozos de piña acaramelados + papa a la francesa + yuca + ensalada
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Chatas de Cerdo</td><td>$36.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Dos presas de chatas de cerdo Fazenda + papa a la francesa, yuca, ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>⭐Chuleta con tocino</td><td>$39.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Dos trozos de delicioso corte de chuleta gruesa, con tocino alrededor + papa francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Churrasco 400 gramos</td><td>$39.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Delicioso corte de res 400gr + papa a la francesa, yuca y ensalada
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Punta de Anca 400 gramos</td><td>$39.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Carne tipo blando 400gr + papa a la francesa, yuca y ensalada
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Baby beeff Gratinado</td><td>$40.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Lomo tierno, fino de res 330gr gratinado + papa a la francesa, yuca y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Parrilla del Corrido</td><td>$59.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            220gr de res, 220gr de cerdo, 220gr de pechuga a la parrilla, acompañado de croqueta de yuca, papa criolla, chorizo fazenda, morcilla fazenda y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Doble Parrillada</td><td>$86.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Doble porción de res 440gr, doble porción de cerdo 440gr, doble porción de pechuga 440gr, doble porción de papa criolla, 4 croquetas de yuca, doble morcilla, doble chorizo Fazenda, 4 porciones de ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Costillas BBQ Libra</td><td>$37.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Baby Beeff Salteado Con camarones</td><td>$44.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>T-bone 350 gramos</td><td>$40.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Rib-eye</td><td>$40.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Mini churrasquito</td><td>$28.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Mojarra en salsa o Frita</td><td>$32.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Bagre en Salsa</td><td>$28.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            --------
+                        </td>
+                    </tr>
 
                 </tbody>
             </table>
@@ -362,29 +584,150 @@
                     </tr>
                 </thead>
                 <tbody>
-            <tr><td>Hamburguesa Clásica</td><td>$12.900</td><td>$22.000</td></tr>
-            <tr><td>Hamburguesa Criolla</td><td>$15.500</td><td>$24.000</td></tr>
-            <tr><td>Hamburguesa Tejana</td><td>$15.500</td><td>$24.000</td></tr>
-            <tr><td>Hamburguesa Con Champinon</td><td>$16.500</td><td>$25.000</td></tr>
-            <tr><td>Hamburguesa Champipollo</td><td>$17.000</td><td>$26.000</td></tr>
-            <tr><td>Hamburguesa Hawaiana</td><td>$16.000</td><td>$24.000</td></tr>
-            <tr><td>Hamburguesa Bistec</td> <td>$16.000</td><td>$25.000</td></tr>
-            <tr><td>Hamburguesa Corrida</td><td>$17.000</td><td>$26.500</td></tr>
-            <tr><td>Hamburguesa Pepinillos</td><td>$14.000</td><td>$23.000</td></tr>
-            <tr><td>Hamburguesa Platano Dulce</td><td>$15.500</td><td>$24.000</td></tr>
-            <tr><td>⭐Hamburguesa Ranchera</td><td>$17.500</td><td>$26.000</td></tr>
-            <tr><td>Hamburguesa Desmechada</td><td>$19.000</td><td>$27.000</td></tr>
-            <tr><td>Hamburguesa Mixta</td><td>$23.000</td><td>$29.000</td></tr>
-            <tr><td>Hamburguesa Mixta Corrida</td><td>$26.000</td><td>$33.000</td></tr>
-            <tr><td>Hamburguesa Doble Carne</td><td>$22.000</td><td>$29.000</td></tr>
-            <tr><td>Hamburguesa Doble Corrida</td><td>$26.000</td><td>$30.000</td></tr>
-            <tr><td>Hamburguesa Triple Carne</td><td>$29.000</td><td>$36.000</td></tr>
-            <tr><td>Hamburguesa Triple Corrida</td><td>$33.000</td><td>$37.000</td></tr>
-            <tr><td>Hamburguesa Triple Mixta Corrida</td><td>$35.000</td><td>$38.000</td></tr>
-            <tr><td>Hamburguesa Nacho Corrida</td><td>$17.000</td><td>$25.000</td></tr>
-            <tr><td>Hamburguesa Artesanal</td><td>$17.000</td><td>$24.000</td></tr>
-            <tr><td>Hamburguesa Artesanal Corrida</td><td>$22.000</td><td>$28.000</td></tr>
-            <tr><td>Hamburguesa Maracostilla</td><td>$20.000</td><td>$27.000</td></tr>
+                <!-- FILA DE INFORMACIÓN DE PRUEBA -->
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Clásica</td><td>$12.900</td><td>$22.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+        Carne de res + pan tostado con ajonjolí + queso fundido + verduras y papa chip.
+    </td>
+</tr> 
+                <!-- FIN DE PRUEBA--> 
+                 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Criolla</td><td>$15.500</td><td>$24.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+        Carne de res + pan tostado con ajonjolí + queso fundido + granos de maíz tierno + verduras y papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Tejana</td><td>$15.500</td><td>$24.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+        Carne de res + pan tostado con ajonjolí + queso fundido + aros de cebolla + verduras y papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Con Champinon</td><td>$16.500</td><td>$25.000</td></tr> <tr class="info oculto">
+    <td colspan="3">
+        Carne de res + pan tostado con ajonjolí + queso fundido + verduras + champiñones + papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Champipollo</td><td>$17.000</td><td>$26.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí + queso fundido + verduras + champiñones + papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Hawaiana</td><td>$16.000</td><td>$24.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí + doble queso fundido + verduras + trozos de piña acaramelados + papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Bistec</td> <td>$16.000</td><td>$25.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí Queso fundido + guiso hogao coronado con un huevo frito + verduras y papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Corrida</td><td>$17.000</td><td>$26.500</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí + queso fundido + Tocinetas + huevo de codorniz + verduras y papa chip.
+    </td>
+</tr> 
+      
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Pepinillos</td><td>$14.000</td><td>$23.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí + queso fundido + Con pepinillos.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Platano Dulce</td><td>$15.500</td><td>$24.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Trozos de plátano caramelizado
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>⭐Hamburguesa Ranchera</td><td>$17.500</td><td>$26.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí + queso fundido + Chorizo ahumado cubiertos con salsa picante + verduras y papa chip.
+    </td>
+</tr> 
+      
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Desmechada</td><td>$19.000</td><td>$27.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + porción de queso fundido + carne de res desmechada + verduras y papa chip.
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Mixta</td><td>$23.000</td><td>$29.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + una porción de pollo apanado + pan tostado con ajonjolí + doble queso fundido, verduras y papa chip
+    </td>
+</tr> 
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Mixta Corrida</td><td>$26.000</td><td>$33.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                --------
+    </td>
+</tr>
+
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Doble Carne</td><td>$22.000</td><td>$29.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Doble carne de res + pan tostado con ajonjolí + doble porción de queso fundido, verduras y papa chip.
+    </td>
+</tr>
+
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Doble Corrida</td><td>$26.000</td><td>$30.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Doble carne de res + pan tostado con ajonjolí + doble porción de queso fundido, tocinetas, huevos de codorniz, verduras y papa chip.
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Triple Carne</td><td>$29.000</td><td>$36.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Triple porción de carne de res + pan tostado con ajonjolí + triple queso fundido, verduras y papa chip y lonja de jamón
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Triple Corrida</td><td>$33.000</td><td>$37.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                Triple porción de carne de res + pan tostado con ajonjolí + triple queso fundido, tocineta, huevos de codorniz, verduras y papa chip y lonja de jamón
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Triple Mixta Corrida</td><td>$35.000</td><td>$38.000</td></tr>
+             <tr class="info oculto">
+    <td colspan="3">
+                --------
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Nacho Corrida</td><td>$17.000</td><td>$25.000</td></tr>
+             <tr class="info oculto">
+    <td colspan="3">
+                Carne de res + pan tostado con ajonjolí + queso fundido + pico de gallo + tocineta y nachos, verduras y papa chip
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Artesanal</td><td>$17.000</td><td>$24.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+               180 gramos de 100% carne
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Artesanal Corrida</td><td>$22.000</td><td>$28.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                180 gramos de 100% carne
+    </td>
+</tr>
+            <tr onclick="toggleInfo(this)" class="fila-menu"><td>Hamburguesa Maracostilla</td><td>$20.000</td><td>$27.000</td></tr>
+            <tr class="info oculto">
+    <td colspan="3">
+                --------
+    </td>
+</tr>
             <p>Los combos incluyen papas y bebida</p>
                 </tbody>
             </table>
@@ -578,4 +921,18 @@
 <script src="script.js"></script>
 
 </body>
+
+<!-- SCRIPT DE INFORMACIÓN -->
+<script>
+function toggleInfo(fila) {
+    let siguiente = fila.nextElementSibling;
+
+    if (siguiente.classList.contains("oculto")) {
+        siguiente.classList.remove("oculto");
+    } else {
+        siguiente.classList.add("oculto");
+    }
+}
+</script>
+
 </html>
