@@ -448,9 +448,9 @@ footer {
     pointer-events: none;
 }
 
-/* LOGO_PIXELADO pc */
+/* LOGO_PIXELADO */
 .logo-img {
-    width: 300px; /*  ajusta tamaño */
+    width: 150px; /* 🔥 ajusta tamaño */
     margin-bottom: 20px;
     
     display: block;
@@ -458,9 +458,8 @@ footer {
     margin-right: auto;
 }
 
-/* LOGO_PIXELADO CELULAR */
 .logo-img {
-    width: 210px;
+    width: 200px;
     margin-bottom: -60px;
     display: block;
     margin-left: auto;
@@ -477,4 +476,29 @@ footer {
     0% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
     100% { transform: translateY(0); }
+}
+
+
+
+/* INFORMACION OCULTA */
+
+.oculto {
+    display: none;
+}
+
+.info td {
+    background: #1a1a1a;
+    color: #ccc;
+    font-size: 14px;
+    padding: 10px;
+    border-left: 3px solid #f5c542;
+}
+
+.fila-menu {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fila-menu:hover {
+    background: rgba(245,197,66,0.1);
 }
