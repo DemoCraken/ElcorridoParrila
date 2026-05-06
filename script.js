@@ -7,3 +7,19 @@ function mostrarCategoria(categoria) {
 
     document.getElementById(categoria).classList.add('activa');
 }
+
+
+
+/* ANUNCIO */
+
+function mostrarPopup() {
+    document.getElementById("overlay").classList.add("activo");
+}
+
+function cerrarPopup() {
+    document.getElementById("overlay").classList.remove("activo");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    mostrarPopup();
+});
