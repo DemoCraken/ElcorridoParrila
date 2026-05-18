@@ -10,7 +10,30 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<!-- ANUNCIO publicitario   -->
 
+<div class="overlay" id="overlay">
+    <div class="popup-corrido">
+
+        <button class="cerrar-popup" onclick="cerrarPopup()">×</button>
+
+        <h2>🔥 EL CORRIDO PARRILLA</h2>
+        <h3>¡Hazle caso al antojo!</h3>
+
+        <p>
+           Tu mejor opcion si estas en Fontibon
+        </p>
+
+        <!--
+        <div class="popup-botones">
+            <a href="#carta" onclick="cerrarPopup()">Ver Carta</a>
+        </div>
+-->
+
+    </div>
+</div>
+
+  <!-- FIN De ANUNCIO publicitario   -->
 <body>
 
 <header id="header">
@@ -80,11 +103,11 @@
                     <tr><td>Pinchos con papas</td><td>$12.500</td></tr>
                     <tr><td>Porcion huevos codorniz</td><td>$5.800</td></tr>
                     <tr><td>Nuggets</td><td>$9.000</td></tr>
-                    <tr><td>Nuggets con papas</td><td>$9.000</td></tr>
+                    <tr><td>Nuggets con papas</td><td>$13.000</td></tr>
                     <tr><td>Anillos de cebollas</td><td>$9.500</td></tr>
                     <tr><td>Porcion de tocinetas</td><td>$9.000</td></tr>
                     <tr><td>Papa francesa, queso gratinado y huevos codorniz</td><td>$10.000</td></tr>
-                    <tr><td>Chorizada de cerdo</td><td>$10.000</td></tr>
+                    <tr><td>Chorizada de cerdo</td><td>$16.000</td></tr>
                     <tr><td>Empanada tipo coctel</td><td>$9.000</td></tr>
                     <tr><td>Dedos de mozarella</td><td>$9.000</td></tr>
                     <tr><td>Patacon con hogao</td><td>$12.000</td></tr>
@@ -322,7 +345,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>⭐El Corrido</td><td>$28.500</td></tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>⭐El Corrido</td><td>$29.000</td></tr>
                     <tr class="info oculto">
                         <td colspan="3">
                             Arroz salteado de verduras, raíces chinas, con trozos de res, cerdo y chorizo, acompañado de costilla ahumada + papas a la francesa y ensalada
@@ -346,16 +369,22 @@
                             Arroz con vegetales salteados, acompañado con trozos de pollo apanado, baño en salsa agridulce, papas a la francesa y ensalada.
                         </td>
                     </tr>
-                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Chaufa</td><td>$30.000</td></tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Chaufa</td><td>$32.000</td></tr>
                     <tr class="info oculto">
                         <td colspan="3">
                             Arroz salteado de verduras, raíces chinas acompañado de trozos de carnes de res, cerdo, pollo, tortilla y camarones, con un toque picante.
                         </td>
                     </tr>
-                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Camaron y Calamar</td><td>$30.000</td></tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Camaron y Calamar</td><td>$32.000</td></tr>
                     <tr class="info oculto">
                         <td colspan="3">
                             Arroz preparado con sazón especial de la casa acompañado de una buena porción de camarones y calamar con un trozo de limón y ensalada.
+                        </td>
+                    </tr>
+                    <tr onclick="toggleInfo(this)" class="fila-menu"><td>Paisa</td><td>$32.000</td></tr>
+                    <tr class="info oculto">
+                        <td colspan="3">
+                            Arroz preparado con sazón especial de la casa acompañado de una buena porción de carne de cerdo, panceta, pechuga, platano y verduras.
                         </td>
                     </tr>
 
@@ -374,10 +403,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Nuggets</td><td>$23.000</td></tr>
-                    <tr><td>Hamburguesa</td><td>$23.000</td></tr>
-                    <tr><td>Perro</td><td>$23.000</td></tr>
-                    <tr><td>Pinchos</td><td>$23.000</td></tr>
+                    <tr><td>Nuggets</td><td>$26.000</td></tr>
+                    <tr><td>Hamburguesa</td><td>$26.000</td></tr>
+                    <tr><td>Perro</td><td>$26.000</td></tr>
+                    <tr><td>Pinchos</td><td>$26.000</td></tr>
                 </tbody>
             </table>
         </div>
@@ -981,8 +1010,8 @@
                     <tr><td>Jugos Naturales leche</td><td>$8.500</td></tr>
                     <tr><td>Jugos Hit</td><td>$4.000</td></tr>
                     <tr><td>Jugos Del Valle</td><td>$3.800</td></tr>
-                    <tr><td>Agua Manantial Natural</td><td>$4.000</td></tr>
-                    <tr><td>Agua Manantial Gas</td><td>$4.300</td></tr>
+                    <tr><td>Agua Manantial Natural</td><td>$5.000</td></tr>
+                    <tr><td>Agua Manantial Gas</td><td>$5.500</td></tr>
                     <tr><td>Granizados Agua</td><td>$11.000</td></tr>
                     <tr><td>Granizados Leche</td><td>$12.000</td></tr>
                     <tr><td>Soda de maracuya</td><td>$10.500</td></tr>
