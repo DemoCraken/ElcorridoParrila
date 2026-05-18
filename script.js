@@ -99,3 +99,7 @@ tsParticles.load("tsparticles", {
         }
     ]
 });
+
+window.addEventListener("resize", () => {
+    tsParticles.domItem(0).refresh();
+});
