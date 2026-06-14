@@ -38,6 +38,15 @@
 
 
 
+<div id="tsparticles"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+
+
+
+
+
 <header id="header">
     <div class="logo">
        <!-- OPCIONAL
@@ -51,51 +60,16 @@
     </nav>
 </header>
 
-<section class="hero" id="inicio">
-    <div class="inicio-search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" id="heroSearch" placeholder="Buscar en la carta">
-    </div>
-
-    <div class="inicio-panel">
-        <div class="inicio-brand">
-            <img src="assets/LOGO_PIXELADO_CROP.png" alt="El Corrido Parrilla">
-        </div>
-
-        <div class="inicio-welcome">
-            <h1>BIENVENIDOS</h1>
-            <p>
-                Disfruta del auténtico sabor casero preparado al momento. En el Corrido Parrilla encontrarás hamburguesas, 
-                carnes, alitas, salchipapas y mucho más, elaborados con ingredientes frescos y el toque especial que nos 
-                caracteriza. Ven y comparte con nosotros una experiencia llena de sabor en Fontibón.
-            </p>
-        </div>
-    </div>
+<section class="hero">
+    <img src="assets/LOGO_PIXELADO.png" class="logo-img">
+    <h1>Bienvenido al Corrido parrilla</h1>
+    <p>Tu mejor opcion si estas en Fontibon</p>
+    <a href="#carta" class="btn">Ver Carta</a>
 </section>
 
 <section id="carta" class="carta">
 
-    
-    <h2 style="color: rgb(255, 255, 255);">¿UN ANTOJO?</h2>
-
-    <div class="menu-app" aria-live="polite">
-        <div class="menu-shell">
-            <aside class="menu-sidebar">
-                <div class="search-box">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" id="menuSearch" placeholder="Buscar plato">
-                </div>
-                <div class="category-cards" id="categoryCards"></div>
-            </aside>
-
-            <section class="menu-detail" id="menuDetail">
-                <div class="detail-empty">
-                    <h3>Elige una sección</h3>
-                    <p>Toca una tarjeta del menú para ver sus platos y abrir cada variante.</p>
-                </div>
-            </section>
-        </div>
-    </div>
+    <h2>¿UN ANTOJO?</h2>
 
     <div class="categorias">
         <button onclick="mostrarCategoria('entradas')">ENTRADAS</button>
@@ -1161,4 +1135,3 @@ function toggleInfo(fila) {
 </script>
 
 </html>
-
