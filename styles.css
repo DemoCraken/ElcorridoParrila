@@ -1300,3 +1300,152 @@ footer {
     color: gold;
     font-weight: bold;
 }
+
+/* ── Identidad 2026: carbón, tinta y rojo corrido ───────────────────────── */
+:root {
+    --rojo-corrido: #e3293d;
+    --rojo-profundo: #8f1324;
+    --tinta: #101010;
+    --grafito: #1d1d1f;
+    --hueso: #f4efe7;
+}
+
+body {
+    background-color: var(--tinta);
+    color: var(--hueso);
+    background-image: radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 5px 5px;
+}
+
+header {
+    width: min(1180px, calc(100% - 32px));
+    height: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16px;
+    padding: 0 28px;
+    background: rgba(16,16,16,.93);
+    border: 1px solid rgba(255,255,255,.12);
+    border-bottom: 2px solid var(--rojo-corrido);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+
+.menu { justify-content: flex-end; gap: clamp(14px, 3vw, 38px); }
+.menu a { font-family: Impact, "Arial Narrow", sans-serif; font-size: .9rem; letter-spacing: .1em; }
+.menu a:hover { color: var(--rojo-corrido); }
+
+.hero {
+    padding: 112px 20px 66px;
+    background:
+        linear-gradient(90deg, rgba(16,16,16,.92) 0%, rgba(16,16,16,.42) 62%, rgba(227,41,61,.18) 100%),
+        linear-gradient(135deg, #171719, #090909);
+}
+
+.inicio-search, .search-box {
+    border-color: rgba(244,239,231,.65);
+    background: var(--hueso);
+    border-radius: 3px;
+}
+.inicio-search:focus-within, .search-box:focus-within { box-shadow: 0 0 0 3px rgba(227,41,61,.35); border-color: var(--rojo-corrido); }
+
+.inicio-panel {
+    position: relative;
+    overflow: hidden;
+    min-height: 330px;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 32px;
+    padding: 36px 48px;
+    border: 1px solid rgba(244,239,231,.16);
+    border-radius: 4px;
+    background: linear-gradient(115deg, #222225 0%, #151517 68%, #49121c 100%);
+    box-shadow: 18px 18px 0 var(--rojo-corrido), 0 28px 48px rgba(0,0,0,.38);
+}
+.inicio-panel::before {
+    content: "PARRILLA · SABOR · FONTIBÓN";
+    position: absolute;
+    left: -55px; bottom: 18px;
+    color: rgba(244,239,231,.12);
+    font: 900 clamp(1.1rem, 3.2vw, 2.8rem)/1 Impact, "Arial Narrow", sans-serif;
+    letter-spacing: .06em;
+    transform: rotate(-7deg);
+    white-space: nowrap;
+}
+.inicio-brand { position: relative; z-index: 1; }
+.inicio-brand img { filter: drop-shadow(12px 14px 0 rgba(227,41,61,.72)); }
+.inicio-welcome { position: relative; z-index: 1; gap: 22px; }
+.inicio-welcome h1 {
+    border: 0;
+    color: var(--hueso);
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(2.6rem, 6vw, 5.2rem);
+    line-height: .9;
+    letter-spacing: .035em;
+    text-align: left;
+}
+.inicio-welcome h1::after { content: ""; display: block; width: 86px; height: 7px; margin-top: 18px; background: var(--rojo-corrido); }
+.inicio-welcome p { width: auto; justify-self: stretch; padding: 18px 20px; border-radius: 0; background: var(--hueso); color: #202024; font-weight: 600; }
+
+.carta {
+    padding: 74px 20px 100px;
+    background: linear-gradient(180deg, #111113, #222225 50%, #111113);
+    color: var(--hueso);
+}
+.carta > h2 { color: var(--hueso) !important; font-family: Impact, "Arial Narrow", sans-serif; font-size: clamp(3rem, 8vw, 6.8rem); line-height: .85; letter-spacing: .025em; }
+.carta > h2::before { content: "LA CARTA"; display: block; margin-bottom: 13px; color: var(--rojo-corrido); font: 800 .76rem/1 Arial, sans-serif; letter-spacing: .28em; }
+
+.menu-shell { gap: 28px; }
+.menu-sidebar { gap: 16px; }
+.category-cards { gap: 10px; }
+.menu-card {
+    position: relative;
+    min-height: 132px;
+    border: 1px solid rgba(244,239,231,.2);
+    border-radius: 2px;
+    background: linear-gradient(150deg, #303034, #151517 72%);
+    box-shadow: none;
+}
+.menu-card::before { content: "✦"; position: absolute; top: 8px; left: 10px; color: var(--rojo-corrido); font-size: .7rem; }
+.menu-card:hover, .menu-card.active { outline: 0; border-color: var(--rojo-corrido); background: linear-gradient(150deg, #5c1723, #19191b 72%); box-shadow: 5px 5px 0 var(--rojo-corrido); }
+.menu-card span { font-family: Impact, "Arial Narrow", sans-serif; letter-spacing: .04em; }
+
+.menu-detail { border: 0; border-radius: 2px; background: var(--hueso); box-shadow: 10px 10px 0 var(--rojo-corrido); }
+.detail-empty { min-height: 420px; background: linear-gradient(135deg, transparent 49.6%, rgba(227,41,61,.15) 50%, transparent 50.4%); }
+.detail-empty h3, .detail-header h3 { color: #1b1b1d; font-family: Impact, "Arial Narrow", sans-serif; letter-spacing: .04em; }
+.detail-header { padding: 25px 28px 17px; border-bottom: 5px solid var(--rojo-corrido); background: #e9e2d8; }
+.detail-header span, .dish-toggle strong, .dish-item.open .dish-toggle span { color: var(--rojo-profundo); }
+.detail-header span { font-weight: 900; }
+.dish-toggle:hover span { color: var(--rojo-corrido); }
+.dish-toggle span { font-family: Impact, "Arial Narrow", sans-serif; font-weight: 400; letter-spacing: .025em; }
+.dish-toggle strong { font-weight: 900; }
+.dish-info { padding: 0 16px 16px; border-left: 4px solid var(--rojo-corrido); }
+.combo-price { border-radius: 0; background: var(--rojo-corrido); }
+
+.nosotros, .opiniones { background: #19191b; }
+.nosotros h2, .opiniones h2 { color: var(--rojo-corrido); font-family: Impact, "Arial Narrow", sans-serif; letter-spacing: .04em; }
+.opinion-card { border-radius: 2px; background: #29292c; border-top: 3px solid var(--rojo-corrido); }
+.opinion-card p { color: var(--hueso); }
+.foto { border-color: var(--rojo-corrido); }
+.redes a { border-radius: 2px; color: var(--hueso); }
+.redes a:hover { background: var(--rojo-corrido); }
+footer { background: #090909; border-top: 1px solid rgba(244,239,231,.15); }
+
+.popup-corrido { border: 1px solid var(--rojo-corrido); border-radius: 2px; background: linear-gradient(145deg, #2c2c2f, #101012); box-shadow: 10px 10px 0 var(--rojo-corrido), 0 20px 40px rgba(0,0,0,.7); }
+.popup-corrido h2, .cerrar-popup { color: var(--rojo-corrido); }
+
+@media (max-width: 860px) {
+    header { height: 46px; padding: 0 16px; }
+    .menu { min-width: 0; justify-content: space-between; }
+    .inicio-panel { grid-template-columns: 1fr; padding: 30px 22px; box-shadow: 9px 9px 0 var(--rojo-corrido); }
+    .inicio-brand { min-height: 160px; }
+    .inicio-welcome h1 { text-align: center; }
+    .inicio-welcome h1::after { margin-inline: auto; }
+}
+@media (max-width: 560px) {
+    .menu a { font-size: .72rem; }
+    .hero { padding: 82px 14px 48px; }
+    .carta { padding-inline: 14px; }
+    .carta > h2 { font-size: clamp(2.9rem, 18vw, 4.8rem); }
+    .menu-detail { box-shadow: 6px 6px 0 var(--rojo-corrido); }
+    .category-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
