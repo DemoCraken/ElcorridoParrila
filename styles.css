@@ -1727,26 +1727,116 @@ footer { background: #090909; border-top: 1px solid rgba(244,239,231,.15); }
 
 @media (max-width: 700px) {
 
-    .popup-nuevo-plato {
-        width: min(95vw, 430px);
-
-        grid-template-columns: 1fr;
+    .overlay {
+        padding: 12px;
+        align-items: center;
     }
+
+    .popup-nuevo-plato {
+        width: 100%;
+        max-width: 420px;
+        max-height: 92vh;
+
+        display: flex;
+        flex-direction: column;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    /* IMAGEN */
 
     .popup-imagen {
-        height: 270px;
-        min-height: 270px;
+        width: 100%;
+        height: 240px;
+        min-height: 240px;
+
+        flex-shrink: 0;
     }
+
+    .popup-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* CONTENIDO */
 
     .popup-contenido {
-        padding: 42px 25px 30px;
+        width: 100%;
+        padding: 42px 26px 28px;
+
+        box-sizing: border-box;
     }
+
+    /* ETIQUETA */
+
+    .popup-etiqueta {
+        font-size: .68rem;
+        padding: 9px 14px;
+    }
+
+    /* PRE TITULO */
+
+    .popup-pre-titulo {
+        font-size: .72rem;
+        letter-spacing: .14em;
+    }
+
+    /* TITULO */
 
     .popup-contenido h2 {
-        font-size: 3rem;
+        width: 100%;
+
+        font-size: clamp(2.2rem, 11vw, 3.2rem);
+
+        line-height: .95;
+
+        letter-spacing: -.03em;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
+    /* DESCRIPCIÓN */
+
     .popup-contenido p {
+        width: 100%;
+        max-width: none;
+
         font-size: .9rem;
+        line-height: 1.55;
+
+        overflow-wrap: break-word;
+    }
+
+    /* PRECIO */
+
+    .popup-precio {
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+    }
+
+    /* BOTÓN */
+
+    .popup-btn {
+        width: 100%;
+        box-sizing: border-box;
+
+        text-align: center;
+
+        padding: 14px 16px;
+    }
+
+    /* CERRAR */
+
+    .cerrar-popup {
+        top: 12px;
+        right: 12px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 21px;
     }
 }
