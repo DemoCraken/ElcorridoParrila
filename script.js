@@ -52,6 +52,16 @@ document.addEventListener("DOMContentLoaded", () => {
   searches.forEach(input => input.addEventListener("input", event => { searches.forEach(other => { if (other !== event.target) other.value = event.target.value; }); search(event.target.value); }));
   window.mostrarCategoria = id => { selected = id; renderCards(); renderDetail(id); document.getElementById("carta")?.scrollIntoView({ behavior: "smooth" }); };
   window.toggleInfo = row => row.nextElementSibling?.classList.toggle("oculto");
-  window.mostrarPopup = () => document.getElementById("overlay")?.classList.add("activo");
-  window.cerrarPopup = () => document.getElementById("overlay")?.classList.remove("activo");
+  window.mostrarPopup = () => 
+    document.getElementById("overlay")?.classList.add("activo");
+
+window.cerrarPopup = () => 
+    document.getElementById("overlay")?.classList.remove("activo");
+
+
+// MOSTRAR POPUP AL ENTRAR
+setTimeout(() => {
+    window.mostrarPopup();
+}, 700);
+
 });
